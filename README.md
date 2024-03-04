@@ -5,7 +5,7 @@ app.js: Файл инициализирует главный Redux store с ис
 index.js: Это точка входа в приложение. Здесь импортируются основные зависимости, включая store, React и ReactDOM. <br>
 Также используется Provider из react-redux, чтобы предоставить доступ к хранилищу Redux для всего приложения.<br>
 <br>
-store.js: Этот файл также инициализирует Redux store, как и app.js.<br>
+<strong>store.js: </strong> Этот файл также инициализирует Redux store, как и app.js.<br>
 <br>
 actionCreator.js: Здесь объявляется действие addBook, которое используется для добавления новой книги в состояние.<br>
 <br>
