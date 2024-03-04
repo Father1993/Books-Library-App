@@ -1,8 +1,11 @@
 # Project Books Library APP
 Проект представляет собой простое приложение для управления книгами, с использованием Redux для управления состоянием.
-### Структура кода
-app.js: Файл инициализирует главный Redux store с использованием booksReducer.
-index.js: Это точка входа в приложение. Здесь импортируются основные зависимости, включая store, React и ReactDOM. <br>
+### Структура кода<br>
+<br>
+<strong>app.js:</strong> Файл инициализирует главный Redux store с использованием booksReducer.<br>
+<br>
+<strong>index.js:</strong> Это точка входа в приложение. Здесь импортируются основные зависимости, включая store, React и ReactDOM. <br>
+<br>
 Также используется Provider из react-redux, чтобы предоставить доступ к хранилищу Redux для всего приложения.<br>
 <br>
 <strong>store.js: </strong> Этот файл также инициализирует Redux store, как и app.js.<br>
