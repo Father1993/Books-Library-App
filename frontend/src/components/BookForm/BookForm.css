@@ -33,7 +33,7 @@
 }
 
 .book-form .spinner {
-    animation: spinner 1s infinite linear;
+    animation: spinner 0.7s infinite linear;
     margin-left: 10px;
 }
 
