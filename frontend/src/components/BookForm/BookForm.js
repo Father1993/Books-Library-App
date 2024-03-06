@@ -19,6 +19,7 @@ const BookForm = () => {
         const randomBookWithID = {
             ...randomBook,
             id: uuidv4(),
+            isFavorite: false,
         }
 
         dispatch(addBook(randomBookWithID))
@@ -32,6 +33,7 @@ const BookForm = () => {
                 title,
                 author,
                 id: uuidv4(),
+                isFavorite: false,
             }
             dispatch(addBook(book))
             setTitle('')
@@ -43,10 +45,10 @@ const BookForm = () => {
     // const [formData, setFormData] = useState({})
     return (
         <div className="app-block book-form">
-            <h2>Add new Book</h2>
+            <h2>Добавит новую книгу</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="title">Title: </label>
+                    <label htmlFor="title">Название: </label>
                     <input
                         type="text"
                         id="title"
@@ -55,7 +57,7 @@ const BookForm = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="title">Author: </label>
+                    <label htmlFor="title">Автор: </label>
                     <input
                         type="text"
                         id="author"
@@ -63,9 +65,9 @@ const BookForm = () => {
                         onChange={(e) => setAuthor(e.target.value)}
                     />
                 </div>
-                <button type="submit">Add book</button>
+                <button type="submit">Добавить книгу</button>
                 <button type="button" onClick={handleAddRandomBook}>
-                    Add Random book
+                    Добавить случайную книгу из топ 100
                 </button>
             </form>
         </div>
